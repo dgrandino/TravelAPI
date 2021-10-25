@@ -2,9 +2,11 @@
 API to CRUD Travels
 
 travels-api
+
 Uma API em Java e Spring Framework para gerenciamento de viagens.
 
 Como a API deve funcionar?
+
 Nossa API deve criar, atualizar, deletar e listar viagens. Além disso, deve calcular estatísticas sobre as viagens criadas. A API terá os seguintes endpoints:
 
 POST/api-travels/travels: cria uma viagem. 
@@ -57,15 +59,23 @@ Em que: sum: um BigDecimal especificando a soma total das viagens criadas. avg: 
 Todos os campos que são BigDecimal devem ter apenas duas casas decimais, por exemplo: 15.385 deve ser retornado como 15.39.
 
 Testes
+
 Para executar o teste unitário, o comando executado deve ser:
+
 mvn test
+
 Para executar todos os testes (incluindo o de integração), o comando executado deve ser:
+
 mvn integration-test
+
 Execução
+
 Para rodar a API via .jar:
 
 java -jar travels-api-2.0.1.jar --spring.profiles.active=dev
+
 ou
 
 mvn spring-boot:run -Dspring.profiles.active=dev
+
 Por default, a API está disponível no endereço http://localhost:8080/
